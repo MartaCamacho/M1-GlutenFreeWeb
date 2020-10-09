@@ -64,13 +64,11 @@ Spoonacular: https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&n
 
 ## Links
 
-### 
-
 ### Trello (list of tasks)
 
-[https://trello.com/b/ZccEeVdu/glutenfree-project](https://trello.com)
+Trello [Gluten project]([https://trello.com/b/ZccEeVdu/glutenfree-project)
 
-### 
+
 
 ### Github
 
