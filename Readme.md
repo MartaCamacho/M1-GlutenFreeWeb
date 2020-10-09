@@ -36,13 +36,29 @@ https://bit.ly/34EvG5u
 
 ## Data structure
 
-Classes and methods definition
+- root/
+  - index.html
+  - blog.html
+  - faq.html
+  - register.html
+  - signin.html
+  - css/
+    - style.css
+  - js/
+    - main.js
+    - Signup.js
+    - User.js
+    - Validator.js
+    - spoonacularApi.js
+  - assets/
+    - img/
+    - fonts/
 
 ## 
 
 ## APIs
 
-The API(s) you are using
+Spoonacular: https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&number=100&apiKey=a112c4d2e68f43d482bbf42cf5b6994b
 
 ## 
 
