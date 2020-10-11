@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gluten free coolest website</title>
     <link rel="stylesheet" href="../CSS/style.css">
-    
+    <link href="../CSS/mobile.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="top">
         <!--BARRA DE NAVEGACIÓN-->
-        <nav class="navBar"> 
+        <nav class="navBar">
+            
             <div>
-                <a href="index.html"><img src= "../Images/Logo Gluten Free web.png" alt="Logo" ></a>
+                <a href="index.html"><img class="logoGF" src= "../Images/Logo Gluten Free web.png" alt="Logo" ></a>
             </div>
+            <div class="menu-items">
+            <label for="hamburger"> &#9776 </label>
+            <input type="checkbox" id="hamburger"/> 
             <ul id="menu">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./blog.html">Blog</a></li>
@@ -22,7 +26,9 @@
                 <li><a href="./LogIn.html">Log in / Sign up</a></li>
                 <li><a href="./FAQ.html">FAQ</a></li>
             </ul>
+        </div>
         </nav>
+    </header>
         <!--FIN BARRA DE NAVEGACIÓN-->
 
 
@@ -34,12 +40,12 @@
             <p>You are not alone!</p>
         </section>
         <!--END OF WEB TITLE-->
-    </header>
+    
 
 
 
     <!--BLOG SECTION-->
-    <section class="Blog">
+    <section class="mainPart">
         <h2>Blog</h2>
         <div><a href="#" alt="Blog first entry"></a></div>
         <div><a href="#" alt="Blog second entry"></a></div>
@@ -49,20 +55,20 @@
 
 
     <!--SIDEBAR SECTION-->
-    <aside>
-        <a href="https://www.instagram.com/glutenfreemarta/" alt="Instagram">Instagram</a>
-        <a href="https://twitter.com/GlutenFreeMarta" alt="Twitter">Twitter</a>
-        <a href="#" alt="Top">Back to top</a>
-    </aside>
+    <div class="sideNav">
+        <a href="https://www.instagram.com/glutenfreemarta/" alt="Instagram"><img src="../Images/instagram-logo.svg" alt="instagram logo"></a>
+        <a href="https://twitter.com/GlutenFreeMarta" alt="Twitter"><img src="../Images/twitter-logo.svg" alt="twitter logo"></a>
+        <a href="#top" alt="Top"><img src="../Images/Back to top arrow.svg" alt="back to top"></a>
+    </div>
     <!--END OF SIDEBAR SECTION-->
 
 
 
     <!--FOOTER-->
     <footer>
-        <a href="#">About</a>
-        <p>Copyright 2020  |  All rights reserved</p>
-        <p>Made with ♥ by Marta Camacho</p>
+        <a href="./FAQ.html">About</a>
+        <p>Copyright 2020  ©  All rights reserved</p>
+        <p>Made with &#9829 by Marta Camacho</p>
     </footer>
     <!--END OF FOOTER-->
 </body>

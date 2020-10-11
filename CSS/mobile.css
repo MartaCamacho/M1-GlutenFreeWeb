@@ -1,0 +1,52 @@
+@media screen and (max-width: 400px) {
+	body {
+    background-color: lightblue;
+    }
+    
+  footer {
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	 }
+
+
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px){
+  
+  /* Horizontal Menu Items */
+#menu { display: flex; }
+#menu li a {
+  width: 20%; /* 100% / 5 tabs = 20% */
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+#menu li a:hover {
+  color: blueviolet;
+}
+  
+  /* Show Hamburger Icon */
+  .navBar label { 
+    display: inline-block; 
+    color: white;
+    background:blueviolet;
+    border-radius: 20%;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  /* Break down menu items into vertical */
+  #menu li a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+  }
+
+  /* Toggle Show/Hide Menu */
+  #menu { display: none; }
+  .navBar input:checked ~ #menu { display: block; }
+}
