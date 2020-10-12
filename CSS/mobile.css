@@ -14,7 +14,10 @@
 @media screen and (max-width: 768px){
   
   /* Horizontal Menu Items */
-#menu { display: flex; }
+#menu { 
+  display: flex; 
+}
+
 #menu li a {
   width: 20%; /* 100% / 5 tabs = 20% */
   padding: 10px;
@@ -38,6 +41,10 @@
     padding: 10px;
   }
 
+  .navBar {
+    box-shadow: none;
+  }
+
   /* Break down menu items into vertical */
   #menu li a {
     box-sizing: border-box;
@@ -46,7 +53,17 @@
     border-top: 1px solid #333;
   }
 
+  .menu-items input{
+    visibility: hidden;
+  }
+
   /* Toggle Show/Hide Menu */
-  #menu { display: none; }
-  .navBar input:checked ~ #menu { display: block; }
+  #menu { 
+    display: none; 
+  }
+  
+  .navBar input:checked ~ #menu { 
+    display: block; 
+  }
+
 }

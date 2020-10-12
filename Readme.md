@@ -22,7 +22,9 @@ Wine pairing.
 
 Random food joke of the day.
 
-Twitter related content
+Twitter related content.
+
+Put a  celiac / not celiac validator when signing in.
 
 ## 
 
