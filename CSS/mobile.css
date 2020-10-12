@@ -1,4 +1,4 @@
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 455px) {
 	body {
     background-color: lightblue;
     }
@@ -6,32 +6,51 @@
   footer {
 	  border-top-left-radius: 0;
 	  border-top-right-radius: 0;
-	 }
+   }
+   
+
+   .login {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 5rem 0.1rem;
+    padding-top: 1rem;
+    background-color: lightgoldenrodyellow;
+    border-radius: 10%;
+    height: 400px;
+    font-size: 75%;
+  }
+
+  #menu {
+    padding-top: 14.6rem;
+    padding: 0 1.5rem;
+    background-color: darkcyan;
+    align-items: center;
+    text-align: center;
+    
+  }
 
 
-
-/* [ON SMALL SCREENS] */
-@media screen and (max-width: 768px){
-  
-  /* Horizontal Menu Items */
-#menu { 
-  display: flex; 
+/* Hide Hamburger */
+#hamnav label, #hamburger { 
+  display: none; 
 }
 
-#menu li a {
-  width: 20%; /* 100% / 5 tabs = 20% */
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
+#hamitems { 
+  display: flex;
 }
 
-#menu li a:hover {
-  color: blueviolet;
-}
-  
-  /* Show Hamburger Icon */
-  .navBar label { 
+  #hamnav {
+    width: 100%;
+    background: darkcyan;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+  }
+
+  #hamnav label { 
     display: inline-block; 
     color: white;
     background:blueviolet;
@@ -41,29 +60,29 @@
     padding: 10px;
   }
 
-  .navBar {
-    box-shadow: none;
-  }
 
-  /* Break down menu items into vertical */
-  #menu li a {
+  #hamitems a {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    border-top: 1px solid #333;
+    border-top: 1px groove ;
+    font-weight: 500;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
   }
 
-  .menu-items input{
-    visibility: hidden;
+  #hamitems a:hover {
+    background-color: blueviolet;
+    color: white;
+    font-weight: 900;
+    transition: 0.8s;
   }
 
   /* Toggle Show/Hide Menu */
-  #menu { 
-    display: none; 
-  }
-  
-  .navBar input:checked ~ #menu { 
-    display: block; 
-  }
-
+  #hamitems { display: none; }
+  #hamnav input:checked ~ #hamitems { display: block; }
+  .navBar { visibility: hidden; }
 }
+

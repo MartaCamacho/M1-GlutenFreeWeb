@@ -40,7 +40,7 @@ class Login {
 
     if (user) {
       
-      message.innerHTML = `Hello, ${user.email}`;
+      message.innerHTML = `Welcome back, ${user.name}!`;
       message.classList.add("correct-message");
     }
     else {
@@ -54,7 +54,7 @@ class Login {
   }
 
   redirect = () => {
-    setTimeout( ()=> location.assign('../HTML/index.html'), 2000);
+    setTimeout( ()=> location.assign('./index.html'), 2000);
   }
 
 }
