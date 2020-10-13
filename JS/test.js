@@ -18,3 +18,12 @@ function hideShow() {
 		bars.classList.add('is-active');
 	}
 }
+
+
+//test a ver si puedo meter la info
+
+let newRandomRecipe = document.createElement('div');
+
+let divRandom = document.getElementById('randomRecipe');
+
+divRandom.appendChild(newRandomRecipe)

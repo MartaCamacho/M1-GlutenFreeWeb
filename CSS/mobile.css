@@ -32,6 +32,33 @@
     
   }
 
+  .title {
+    z-index: 1;
+    /*background-image: url("../Images/WheatBackground.jpg");*/
+    background-size: cover;
+    border-radius: 5%;
+    height: 12rem;
+  }
+
+  .faq-buttons{
+    margin: 75% 0 0 0;
+    padding: 0;
+    color: purple;
+    text-decoration: none;
+    width: 100%;
+  }
+
+
+  .recipe-full-list div{
+    align-items: center;
+    text-align: center;
+    margin: 5px 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10%;
+    min-width: 75%;
+  }
+
 
 /* Hide Hamburger */
 #hamnav label, #hamburger { 
@@ -46,7 +73,7 @@
     width: 100%;
     background: darkcyan;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     top: 0;
   }
 
@@ -65,7 +92,7 @@
     box-sizing: border-box;
     display: block;
     width: 100%;
-    border-top: 1px groove ;
+    border-top: 2px dotted ;
     font-weight: 500;
     padding: 10px;
     color: white;
@@ -80,9 +107,9 @@
     transition: 0.8s;
   }
 
-  /* Toggle Show/Hide Menu */
   #hamitems { display: none; }
   #hamnav input:checked ~ #hamitems { display: block; }
   .navBar { visibility: hidden; }
 }
+
 

@@ -10,28 +10,47 @@
 </head>
 <body></body>
 <header id="top">
-    <!--BARRA DE NAVEGACIÓN-->
-    <nav class="navBar">
+        <!--BIG SCREEN NAVBAR-->
+        <nav class="navBar">
             
-        <div>
-            <a href="./index.html"><img class="logoGF" src= "./Images/Logo Gluten Free web.png" alt="Logo" ></a>
-        </div>
-        <div class="menu-items">
-         <label for="hamburger"> &#9776 </label>
-         <input type="checkbox" id="hamburger"/> 
-         <ul id="menu">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./Recipes.html">Recipes</a></li>
-          <li><a href="./FAQ.html">FAQ</a></li>
-          <li><a href="./LogIn.html">Log in</a></li>
-          <li><a href="./Sign up.html">Sign up</a></li>
-        </ul>
-        </div>
-    </nav>
-    <!--FIN BARRA DE NAVEGACIÓN-->
+          <div>
+              <a href="./index.html"><img class="logoGF" src= "./Images/Logo Gluten Free web.png" alt="Logo" ></a>
+          </div>
+          <div class="menu-items">
+           <ul id="menu">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./Recipes.html">Recipes</a></li>
+              <li><a href="./FAQ.html">FAQ</a></li>
+              <li><a href="./LogIn.html">Log in</a></li>
+              <li><a href="./Sign up.html">Sign up</a></li>
+          </ul>
+          </div>
+      </nav>
+  
+      <!--END OF BIG SCREEN NAVBAR-->
 
 
+      <!--HAMBURGER NAVBAR-->
+      <nav id="hamnav">
+          <!-- [THE HAMBURGER] -->
+          <label for="hamburger">&#9776;</label>
+          <input type="checkbox" id="hamburger"/>
+
+          <!-- [MENU ITEMS] -->
+          <div id="hamitems">
+          <a href="./index.html">Home</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./Recipes.html">Recipes</a>
+          <a href="./FAQ.html">FAQ</a>
+          <a href="./LogIn.html">Log in</a>
+          <a href="./Sign up.html">Sign up</a>
+          </div>
+      </nav>
+
+      <!--END OF HAMBURGER NAVBAR-->
+
+<div class="section-container">
     <!--LOG IN-->
     <main>
         <section class="login">
@@ -42,20 +61,17 @@
               <input type="password" id="password" placeholder="******" />
               <button type="submit" class="button" id="login-button">Login</button>
             </form>
-            <div class="message-container">
-            </div>
             <p>You don't have an account? <a href="Sign up.html">Click here</a> to sing up!</p>
           </div>
+            
+            <div class="message-container">
+            </div>
         </section>
       </main>
     <!--FIN DEL LOG IN-->
-
+  </div>
 
 </header>
-
-    
-
-
 
 
 
