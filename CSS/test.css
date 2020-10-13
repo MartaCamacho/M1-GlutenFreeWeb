@@ -1,57 +1,22 @@
-/* [ON BIG SCREEN] */
-/* Wrapper */
-#hamnav {
-    width: 100%;
-    background: #000;
-    /* Optional */
-    position: sticky;
-    top: 0;
+elemento {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-46deg, #b485b, #56217, #f2196f3, #3f44336);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+  0%
+  {
+    background-position:0% 50%;
   }
-  
-  /* Hide Hamburger */
-  #hamnav label, #hamburger { display: none; }
-  
-  /* Horizontal Menu Items */
-  #hamitems { display: flex; }
-  #hamitems a {
-    width: 20%; /* 100% / 5 tabs = 20% */
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
+  50%
+  {
+    background-position:0% 50%;
   }
-  #hamitems a:hover {
-    background: #401408;
+  100%
+  {
+    background-position:100% 50%;
   }
-  
-  /* [ON SMALL SCREENS] */
-  @media screen and (max-width: 768px){
-    /* Show Hamburger Icon */
-    #hamnav label { 
-      display: inline-block; 
-      color: white;
-      background: #a02620;
-      font-style: normal;
-      font-size: 1.2em;
-      padding: 10px;
-    }
-  
-    /* Break down menu items into vertical */
-    #hamitems a {
-      box-sizing: border-box;
-      display: block;
-      width: 100%;
-      border-top: 1px solid #333;
-    }
-  
-    /* Toggle Show/Hide Menu */
-    #hamitems { display: none; }
-    #hamnav input:checked ~ #hamitems { display: block; }
-  }
-  
-  /* [DOES NOT MATTER] */
-  html, body {
-    padding: 0;
-    margin: 0;
-    font-family: arial, sans-serif;
-  }
+}

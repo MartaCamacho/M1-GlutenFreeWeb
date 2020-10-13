@@ -61,22 +61,27 @@ header {
 	position: relative;
 }
 
+
 .title {
 	text-align: center;
-	font-size: 40px;
-	padding-top: 40px;
-	position: absolute;
-	margin: 60px 0;
+	font-size: 30px;
+	position: relative;
+	margin: 1rem 20rem 2rem 20rem;
+	padding: 1rem 0;
 	z-index: 1;
-	/*background-image: url("../Images/WheatBackground.jpg");*/
-	background-size: cover;
-	border-radius: 5%;
-	height: 20rem;
+	height: 15rem;
+}
+
+.title h1 {
+	font-size: 40px;
+	margin-bottom: 1.5rem;
 }
 
 .paragraph {
-	font-size: 16px;
+	font-size: 18px;
 	padding-top: 25px;
+	margin: 1rem 10rem;
+	text-align: center;
 }
 
 .navBar {
@@ -86,7 +91,7 @@ header {
 	display: flex;
 	position: fixed;
 	top:0;
-	z-index: 10;
+	z-index:12;
 	background-size: 100%;
 	width: 100%;
 	justify-content: space-around;
@@ -99,6 +104,8 @@ header {
 
 #menu li a:hover{
 	color: purple;
+	text-decoration: none;
+	transition: 0.7s;
 }
 
 .logoGF {
@@ -167,6 +174,7 @@ footer {
 	 flex-direction: column;
 	 align-items: flex-end;
 	margin-right: 5px;
+	z-index: 13;
 }
 
 .sideNav img{
@@ -210,6 +218,10 @@ footer {
 	margin: 0.5rem;
 }
 
+.login-form p {
+	margin-top: 1rem; 
+}
+
 .button {
 	background-color: darkcyan;
 	color: white;
@@ -237,21 +249,40 @@ footer {
 /* END OF LOG IN STYLING*/
 
 
-/* start OF faq STYLING*/
+/* start OF FAQ STYLING*/
 .faq-buttons{
-	margin-top: 250px;
+	margin: 10px 40px;
 	color: purple;
 	text-decoration: none;
-	width: 50%;
-
-
+	display: flex;
+	flex-direction: column;
+	align-content: center;
 }
 
 .section-container{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 0 2rem;
 }
+
+.card{
+    margin-top:10px;
+	background-color: lightgoldenrodyellow;	
+  }
+
+  .btn {
+	  text-decoration: none;
+	  color: darkcyan;
+	  font-weight: bolder;
+  }
+
+  .btn:hover {
+	  font-size: 105%;
+	  background-color: darkcyan;
+	  text-decoration: none;
+	  color: lightgoldenrodyellow;
+  }
 
 /* END OF faq STYLING*/
 
@@ -268,6 +299,7 @@ footer {
 	justify-content: flex-start;
 	align-items: center;
 	align-content: stretch;
+	margin: 17rem;
 }
 
 .recipe-full-list div{
@@ -282,7 +314,36 @@ footer {
 }
 
 /* END OF RECIPES STYLING*/
+
+
+/* GRADIENT BACKGROUND*/
+.topPart {
+	margin: 0 2rem;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
   
+	/* END OF GRADIENT BACKGROUND*/
   @media screen and (min-width: 456px) {
 	body {
 	  background-color: #83b1ee;
