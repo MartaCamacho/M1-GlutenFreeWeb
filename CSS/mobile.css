@@ -1,4 +1,4 @@
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 768px) {
 	body {
     background-color: lightblue;
     }
@@ -50,18 +50,25 @@
     margin: 15% 0 0 0;
     padding: 0;
     width: 100%;
-    font-size: 28px;
   }
 
-  .faq-buttons{
-    margin-top: 20%;
-    padding: 0;
-    color: purple;
-    text-decoration: none;
-    width: 100%;
-  }
+.topPart h1 {
+  font-size: 46px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
 
+.topPart p {
+  font-size: 18px;
+  margin: 5px 0 0 0;
+  padding: 0 5px;
+}
 
+.paragraph {
+  margin: 0;
+  padding: 20px;
+}
 
   .recipe-full-list {
     display: flex;
@@ -82,6 +89,64 @@
     border-radius: 10%;
     min-width: 75%;
   }
+
+  /* start OF FAQ STYLING*/
+.main-configuration {
+  margin: 0%;
+}
+
+.faq-buttons{
+  margin-top: 20%;
+  padding: 0;
+  color: darkcyan;
+  text-decoration: none;
+  width: 100%;
+}
+
+.section-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+}
+
+.card{
+  margin-top:10px;
+	background-color: lightgoldenrodyellow;	
+  }
+
+  .btn {
+	  text-decoration: none;
+	  color: darkcyan;
+	  font-weight: bolder;
+  }
+
+  .btn:hover {
+	  font-size: 105%;
+	  background-color: darkcyan;
+	  text-decoration: none;
+	  color: lightgoldenrodyellow;
+  }
+
+/* END OF faq STYLING*/
+
+/* START OF BLOG STYLING*/
+.blog-entries {
+	text-align: center;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.blog-entries article {
+	background-color: lightgoldenrodyellow;
+	border-radius: 0;
+	padding: 0;
+	margin-top: 2rem;
+	font-size: 18px;
+}
+
+
+/* END OF BLOG STYLING*/
 
 
 /* Hide Hamburger */

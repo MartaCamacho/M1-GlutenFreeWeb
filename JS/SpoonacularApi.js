@@ -30,24 +30,46 @@
 //     getRandomRecipe()
 
 
+
+
+
+
+
     //variable for all the recipes
     const getRecipes = async() => {
     let divRecipeinfo = document.querySelector('.recipe-full-list');
 
-    const response = await fetch("https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&number=100&apiKey=99a9e25d870940849ebc295e3f83c4e9");
+    const response = await fetch("https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&number=100&apiKey=43999b205346422a8c4111173508a428");
     const recipe = await response.json();
     
     let allRecipesInfo = recipe.results.map(async oneRecipe => {
     const recipe = await document.createElement('div');
-    recipe.innerHTML = await ` <img class="recipePhoto" src= "${oneRecipe.image}" alt="Recipe Photo" >  <p>&#127860 ${oneRecipe.title}</p> `;
+    
+    //añadir clase al div
+    recipe.innerHTML = await ` <img class="recipePhoto" src= "${oneRecipe.image}" alt="${oneRecipe.title}" > <p>&#127860 ${oneRecipe.title}</p> <p> ${oneRecipe.instructions}</p>`;
     await divRecipeinfo.appendChild(recipe);
     });
-    
-    
-    
     }
     
+    //variable for all the descriptions
+    const getRecipesDescription = async() => {
+    const responseId = await fetch(`https://api.spoonacular.com/recipes/${oneRecipe.id}/information?&apiKey=99a9e25d870940849ebc295e3f83c4e9`);
+    const recipeId = await responseId.json();
+
+    let allRecipesInfo = recipeId.results.map(async oneRecipe => {
+    const recipeDescription = await document.createElement('div');
+        
+    recipe.innerHTML = await ` <img class="recipePhoto" src= "${oneRecipe.image}" alt="${oneRecipe.title}" > <p>&#127860 ${oneRecipe.title}</p> <p> ${oneRecipe.instructions}</p>`;
+    await divRecipeinfo.appendChild(recipeDescription);
+    });
+    }
+
+
+
+
+
     getRecipes()
+    getRecipesDescription()
 
 
 //otro test

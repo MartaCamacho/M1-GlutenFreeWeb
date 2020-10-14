@@ -66,15 +66,23 @@ header {
 	text-align: center;
 	font-size: 30px;
 	position: relative;
-	margin: 1rem 20rem 2rem 20rem;
+	margin: 1rem 0;
 	padding: 1rem 0;
 	z-index: 1;
 	height: 15rem;
 }
 
-.title h1 {
+.topPart h1 {
 	font-size: 40px;
 	margin-bottom: 1.5rem;
+}
+
+.topPart p {
+	font-size: 30px;
+	margin-bottom: 1.5rem;
+	padding: 0 2rem;
+	width: 100%;
+	background-size: 100%;
 }
 
 .paragraph {
@@ -106,6 +114,9 @@ header {
 	color: purple;
 	text-decoration: none;
 	transition: 0.7s;
+	background-color: white;
+	border-radius: 10%;
+	background-size: 10px;
 }
 
 .logoGF {
@@ -250,13 +261,14 @@ footer {
 
 
 /* start OF FAQ STYLING*/
+
 .faq-buttons{
-	margin: 10px 40px;
-	color: purple;
+	color: darkcyan;
 	text-decoration: none;
 	display: flex;
 	flex-direction: column;
 	align-content: center;
+	
 }
 
 .section-container{
@@ -316,9 +328,38 @@ footer {
 /* END OF RECIPES STYLING*/
 
 
+
+/* START OF BLOG STYLING*/
+.blog-entries {
+	text-align: center;
+	display: flex;
+	flex-direction: column-reverse;
+	margin-bottom: 6rem;
+}
+
+.blog-entries article {
+	background-color: lightgoldenrodyellow;
+	border-radius: 10%;
+	padding: 2rem 10rem;
+	margin-top: 2rem;
+	font-size: 18px;
+}
+
+.blog-paragraph {
+	margin-top: 1rem;
+	border-top: 1rem;
+}
+
+
+/* END OF BLOG STYLING*/
+
+
+
+
+
 /* GRADIENT BACKGROUND*/
 .topPart {
-	margin: 0 2rem;
+	
 	width: 100%;
 	height: 100%;
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -344,20 +385,14 @@ footer {
 }
   
 	/* END OF GRADIENT BACKGROUND*/
-  @media screen and (min-width: 456px) {
-	body {
-	  background-color: #83b1ee;
 
-	}
-
-
-	#hamnav label, #hamburger { display: none; }
-}
   
   @media screen and (min-width: 768px) {
 	body {
 	  background-color: #debff3;
 	}
+
+	#hamnav label, #hamburger { display: none; }
   }
 
 
