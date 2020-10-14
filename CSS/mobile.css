@@ -11,6 +11,7 @@
    main {
     padding-bottom: 0;
     margin: 0;
+    margin-bottom: 10rem;
   }
    
 
@@ -27,6 +28,8 @@
     height: 400px;
     font-size: 75%;
   }
+
+ 
 
   .login-form input {
     margin: 0.3rem;
@@ -134,15 +137,21 @@
 .blog-entries {
 	text-align: center;
 	display: flex;
-	flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  margin-bottom: 6rem;
 }
+
 
 .blog-entries article {
 	background-color: lightgoldenrodyellow;
 	border-radius: 0;
-	padding: 0;
-	margin-top: 2rem;
+	padding: 2rem 1rem;
+  font-size: 18px;
+	margin: 2rem 0 0 0;
 	font-size: 18px;
+  max-width: 100%;
+  width: 100%;
+  box-shadow: 5px 5px 5px #8888888f;
 }
 
 

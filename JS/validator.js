@@ -3,10 +3,10 @@
 
 class Validator {
   constructor() {
-    this.invalidEmailError = 'this e-mail has gluten on it, please introduce a valid one!';
-    this.emailExistsError = 'This e-mail is already registered';
-    this.passwordError = 'Your password should have 6 or more characters';
-    this.repeatPasswordError = 'Passwords are not coinciding!';
+    this.invalidEmailError = '&#9940 This e-mail has gluten on it, please introduce a valid one! &#9940 ';
+    this.emailExistsError = '&#9940 This e-mail is already registered &#9940 ';
+    this.passwordError = '&#9940 Your password should have 6 or more characters &#9940 ';
+    this.repeatPasswordError = '&#9940 Ops! Passwords are not coinciding !&#9940 ';
 
     this.errors = {
       invalidEmailError: this.invalidEmailError,
