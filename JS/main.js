@@ -1,1 +1,0 @@
-document.getElementsByClassName("title").style.backgroundColor = "#ffffff";

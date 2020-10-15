@@ -40,12 +40,12 @@ class Login {
 
     if (user) {
       
-      message.innerHTML = `Welcome back, ${user.name}!`;
+      message.innerHTML = `&#127775 Welcome back, ${user.name}!`;
       message.classList.add("correct-message");
     }
     else {
       // si el inicio de sesión no se ha realizado correctamente
-      message.innerHTML = 'Incorrect e-mail or password, try again.';
+      message.innerHTML = '&#9940 Incorrect e-mail or password, try again.';
     }
 
     this.messageContainer.appendChild(message);

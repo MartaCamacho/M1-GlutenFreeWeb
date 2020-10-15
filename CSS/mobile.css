@@ -93,6 +93,19 @@
     min-width: 75%;
   }
 
+
+/*START OF HOME STILING*/
+.home-content{
+  display: flex;
+  flex-direction: row;
+}
+
+
+/*END OF HOME STILING*/
+
+
+
+
   /* start OF FAQ STYLING*/
 .main-configuration {
   margin: 0%;
@@ -153,6 +166,7 @@
   width: 100%;
   box-shadow: 5px 5px 5px #8888888f;
 }
+
 
 
 /* END OF BLOG STYLING*/

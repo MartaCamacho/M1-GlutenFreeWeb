@@ -114,9 +114,6 @@ header {
 	color: purple;
 	text-decoration: none;
 	transition: 0.7s;
-	background-color: white;
-	border-radius: 10%;
-	background-size: 10px;
 }
 
 .logoGF {
@@ -192,6 +189,71 @@ footer {
 	width: 20px;
 }
 
+
+/*START OF HOME STILING*/
+.home-content{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 4rem;
+  }
+
+.home-section div a h2 {
+	text-align: center;
+	font-size: 26px;
+}
+
+.home-section {
+	width: 30%;
+	height: 12rem;
+	background-color: white;
+	margin: 1rem;
+	padding: 8rem 3rem;
+	border-radius: 10%;
+	position: relative;
+	z-index: 300;
+	
+}
+
+.home-section div a{
+	text-decoration: none;
+	font-size: 18px;
+	padding: 1rem;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+	color: purple;
+}
+
+.home-section div {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.index-text{
+	text-align: center;
+
+}
+
+.button-home {
+	margin-top: 2rem;
+}
+
+.home-section div a:hover {
+	color: darkcyan;
+	text-decoration: none;
+	transition: 0.7s;
+
+}
+
+  
+  
+  /*END OF HOME STILING*/
+
 /* LOG IN STYLING*/
 
 .login {
@@ -252,12 +314,24 @@ footer {
 
 .message-container p{
 	background-color: darkcyan;
-	border-radius: 10%;
 	color: white;
-	margin: 1rem 3rem 0 3rem;
+	margin: 1rem 2rem 0 2rem;
 	padding: 0.7rem;
 	font-weight: bold;
+	font-size: 14px;
+	max-width:300px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 	}
+.form-wrapper {
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+
+}
 
 
 /* END OF LOG IN STYLING*/
@@ -272,6 +346,7 @@ footer {
 	flex-direction: column;
 	align-content: center;
 	
+
 }
 
 .section-container{
@@ -305,13 +380,14 @@ footer {
 /* start OF RECIPES STYLING*/
 .recipePhoto{
 	border-radius: 10%;
-	width: 100px;
+	width: 40%;
+	min-width: 33%;
 }
 
 .recipe-full-list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 	align-content: stretch;
 	margin: 17rem;
@@ -320,13 +396,28 @@ footer {
 .recipe-full-list div{
 	align-items: center;
 	text-align: center;
-	margin: 5px 20px;
-	background-color: white;
+	margin: 5px 20%;
+	background-color: lightgoldenrodyellow;
 	padding: 20px;
 	border-radius: 10%;
 	min-width: 33%;
 	max-width: 33%;
+	height:33%;
 }
+
+#random-and-not {
+	display:flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+.container h2 {
+	font-weight: 500;
+	font-size: 18px;
+
+}
+
 
 /* END OF RECIPES STYLING*/
 
