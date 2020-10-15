@@ -377,7 +377,7 @@ footer {
 /* END OF faq STYLING*/
 
 
-/* start OF RECIPES STYLING*/
+/* START OF RECIPES STYLING*/
 .recipePhoto{
 	border-radius: 10%;
 	width: 40%;
@@ -405,6 +405,13 @@ footer {
 	height:33%;
 }
 
+
+.recipe-full-list p {
+	color: black;
+	font-size: 22px;
+	font-weight: 300;
+
+}
 #random-and-not {
 	display:flex;
 	align-items: center;
@@ -414,9 +421,26 @@ footer {
 
 .container h2 {
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 38px;
+	color: white;
+	font-weight: bold;
 
 }
+
+.container {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.recipe-title {
+	color: darkcyan;
+	font-weight: 900;
+	font-size:;
+}
+
 
 
 /* END OF RECIPES STYLING*/

@@ -11,26 +11,26 @@
 
 // //variable to get all the recipes from the API:
 
-// const getRandomRecipe = async() => {
+const getRandomRecipe = async() => {
     
-//     //get all the recipes from the API
-//     const response = await fetch("https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&number=100&apiKey=99a9e25d870940849ebc295e3f83c4e9");
-//     const recipe = await response.json();
-//     const arrayRecipes = recipe.results;
+    //get all the recipes from the API
+    const response = await fetch("https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&number=100&apiKey=99a9e25d870940849ebc295e3f83c4e9");
+    const recipe = await response.json();
+    const arrayRecipes = recipe.results;
     
-//     //get a random recipe
-//     const randomNum = Math.floor((Math.random()) * (arrayRecipes.length));
-//     const objRecipe = arrayRecipes[randomNum];
-//     const objRecipeId = objRecipe.id;
+    //get a random recipe
+    const randomNum = Math.floor((Math.random()) * (arrayRecipes.length));
+    const objRecipe = arrayRecipes[randomNum];
+    const objRecipeId = objRecipe.id;
     
-//     //get the detailes info of the random recipe
-//     const responseId = await fetch(`https://api.spoonacular.com/recipes/${objRecipeId}/information?&apiKey=99a9e25d870940849ebc295e3f83c4e9`);
-//     const recipeId = await responseId.json();
+    //get the detailes info of the random recipe
+    const responseId = await fetch(`https://api.spoonacular.com/recipes/${objRecipeId}/information?&apiKey=99a9e25d870940849ebc295e3f83c4e9`);
+    const recipeId = await responseId.json();
     
-//     return recipeId;
-//     }
+    return recipeId;
+    }
     
-//     getRandomRecipe()
+    getRandomRecipe()
 
 
 
@@ -40,13 +40,13 @@
 
 async function getRecipes() {
     const recipeResponse = await fetch(
-      "https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&number=10&apiKey=7f0c4697ea0844dab974a6aec315fb6b"
+      "https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&number=2&apiKey=c0579e462a3848dc96338129e0a230f9 "
     );
     const recipeJSON = await recipeResponse.json();
     const profiles = recipeJSON.results.map(async (recipe) => {
       const id = recipe.id;
       const profileResponse = await fetch(
-        `https://api.spoonacular.com/recipes/${id}/information?&apiKey=7f0c4697ea0844dab974a6aec315fb6b`
+        `https://api.spoonacular.com/recipes/${id}/information?&apiKey=c0579e462a3848dc96338129e0a230f9 `
       );
       const profileJSON = await profileResponse.json();
       return profileJSON;
@@ -56,25 +56,29 @@ async function getRecipes() {
 
 
   const divRecipeinfo = document.querySelector(".recipe-full-list");
+
+
   function generateHTML(data) {
     
     data.map((recipe) => {
         const recipes = document.createElement("div");
         if (recipe.instructions !== null) {
             recipes.innerHTML = `
-            <img src='${recipe.image}'>
-                    <span>${recipe.title}</span>
-                    <h2>${recipe.instructions}</h2>`;
+            <img class="recipePhoto" src='${recipe.image}'>
+                    <span class="recipe-title">${recipe.title}</span>
+                    <p>${recipe.instructions}</p>`;
                     divRecipeinfo.appendChild(recipes);
             } else {
                 recipes.innerHTML = `
-                <img src='${recipe.image}'>
-                <span>${recipe.title}</span>
-                <h2>${recipe.summary}</h2>`;
+                <img class="recipePhoto" src='${recipe.image}'>
+                <span class="recipe-title">${recipe.title}</span>
+                <p>${recipe.summary}</p>`;
                 divRecipeinfo.appendChild(recipes);
             }
   });
 }
+
+
   async function getElements() {
     const recipes = await getRecipes();
     generateHTML(recipes);
@@ -86,7 +90,33 @@ async function getRecipes() {
 
 
 
-
 // CODE FOR GETTING THE RANDOM RECIPE
+
+
+    const divRandomRecipeinfo = document.querySelector(".random-recipe");
+    
+    
+    function generateRdmHTML(rdmData) {
+    
+        const randomRecipes = document.createElement("div");
+        if (rdmData.instructions !== null) {
+            randomRecipes.innerHTML = `
+            <img src='${rdmData.image}'>
+            <span>${rdmData.title}</span>
+             <h2>${rdmData.instructions}</h2>`;
+                    divRandomRecipeinfo.appendChild(randomRecipes);
+            } else {
+                randomRecipes.innerHTML = `
+                <img src='${rdmData.image}'>
+                <span>${rdmData.title}</span>
+                <h2>${rdmData.summary}</h2>`;
+                divRandomRecipeinfo.appendChild(randomRecipes);
+            }
+        }
+        async function getRandomElements() {
+          const recipes = await getRandomRecipe();
+          generateRdmHTML(recipes);
+        };
+        getRandomElements();
 
 //END OF CODE FOR GETTING THE RANDOM RECIPE
