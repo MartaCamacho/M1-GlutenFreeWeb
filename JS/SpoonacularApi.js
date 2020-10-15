@@ -103,20 +103,21 @@ async function getRecipes() {
             randomRecipes.innerHTML = `
             <img src='${rdmData.image}'>
             <span>${rdmData.title}</span>
-             <h2>${rdmData.instructions}</h2>`;
+            <h2>${rdmData.instructions}</h2>`;
                     divRandomRecipeinfo.appendChild(randomRecipes);
-            } else {
-                randomRecipes.innerHTML = `
-                <img src='${rdmData.image}'>
-                <span>${rdmData.title}</span>
-                <h2>${rdmData.summary}</h2>`;
-                divRandomRecipeinfo.appendChild(randomRecipes);
+        } else {
+            randomRecipes.innerHTML = `
+            <img src='${rdmData.image}'>
+            <span>${rdmData.title}</span>
+            <h2>${rdmData.summary}</h2>`;
+            divRandomRecipeinfo.appendChild(randomRecipes);
             }
-        }
-        async function getRandomElements() {
-          const recipes = await getRandomRecipe();
-          generateRdmHTML(recipes);
-        };
-        getRandomElements();
+    }
+    async function getRandomElements() {
+        const recipes = await getRandomRecipe();
+        generateRdmHTML(recipes);
+    };
+    
+    getRandomElements();
 
 //END OF CODE FOR GETTING THE RANDOM RECIPE
