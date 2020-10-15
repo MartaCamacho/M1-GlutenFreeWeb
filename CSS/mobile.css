@@ -5,38 +5,13 @@
     
   footer {
 	  border-top-left-radius: 0;
-	  border-top-right-radius: 0;
+    border-top-right-radius: 0;
    }
 
    main {
     padding-bottom: 0;
     margin: 0;
     margin-bottom: 10rem;
-  }
-   
-
-   .login {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    text-align: center;
-    margin: 5rem 0.1rem;
-    padding-top: 1rem;
-    background-color: lightgoldenrodyellow;
-    border-radius: 10%;
-    height: 400px;
-    font-size: 75%;
-  }
-
- 
-
-  .login-form input {
-    margin: 0.3rem;
-  }
-  
-  .login-form p {
-    margin-top: 3rem; 
   }
 
   #menu {
@@ -95,16 +70,97 @@
 
 
 /*START OF HOME STILING*/
+
+
 .home-content{
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 4rem;
+	width: 100%;
+  }
+
+.home-section div a h2 {
+	text-align: center;
+	font-size: 26px;
+}
+
+.home-section {
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 90%;
+  height: 2rem;	
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.home-section div a{
+	text-decoration: none;
+	font-size: 17px;
+  padding: 0;
+	text-align: center;
+  color: purple;
+  margin: 2rem 0;
+}
+
+.home-section div {
+	display:flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: white;
+	border-radius: 10%;
+	margin: 1rem 0 0 0;
+	width: 100%;
+	padding: 1rem 0 0 0;
+}
+
+.index-text{
+	text-align: center;
+
+}
+
+.button-home {
+	padding-top: 1rem;
 }
 
 
 /*END OF HOME STILING*/
 
 
+/*START OF LOGIN / SIGN UP STILING*/
+.login {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 4rem 0.1rem 12rem; 
+  padding-top: 1rem;
+  background-color: lightgoldenrodyellow;
+  border-radius: 10%;
+  height: 400px;
+  font-size: 75%;
+}
 
+
+
+.login-form input {
+  margin: 0.3rem;
+}
+
+.login-form p {
+  margin-top: 3rem; 
+}
+
+#login-message {
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+/*END OF LOGIN / SIGN UP STILING*/
 
   /* start OF FAQ STYLING*/
 .main-configuration {
@@ -117,6 +173,8 @@
   color: darkcyan;
   text-decoration: none;
   width: 100%;
+  margin-bottom:5rem;
+  margin: 0;
 }
 
 .section-container{
@@ -177,9 +235,9 @@
   display:flex;
   justify-content: center;
   border-radius: 20%;
-  width: 100%;
+  width: 80%;
   padding: 0;
-  margin:0 0 2rem 0;
+  margin: 1rem 0 2rem 0;
   align-items: center;
   text-align: center;
   min-width: none;
@@ -195,35 +253,53 @@
 .recipe-full-list div{
 	align-items: center;
 	text-align: center;
-	margin: 5rem 1rem;
+	margin: 1rem 0rem;
 	background-color: lightgoldenrodyellow;
-	padding: 2rem;
+	padding: 1rem;
 	border-radius: none;
-	width: 100%;
+  width: 100%;
+  margin: 1rem 0.5rem;
+}
+
+.random-recipe div {
+  margin: 0;
+  background-color: lightgoldenrodyellow;
+  padding: 0;
+  border-radius: 10%;
+  width: 100%;
 }
 
 #random-and-not {
 	display:flex;
 	align-items: center;
 	text-align: center;
-	flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .container h2 {
 	font-weight: 500;
-	font-size: 38px;
+	font-size: 20px;
 	color: white;
-	font-weight: bold;
+  font-weight: bold;
+  padding: 2rem;
+  margin: 1rem;
 }
 
 .recipe-title {
-
+  color: darkcyan;
+  font-weight: 700;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
 }
 
-.container section p {
 
+.container section div{
+  margin: 0.5rem;
+  padding: 0.7rem;
+  font-size: 16px;
 }
-
 
 /* END OF RECIPES STYLING*/
 

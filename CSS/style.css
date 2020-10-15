@@ -1,550 +1,635 @@
 /*BEGINNING OF THE STYLE RESET*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*END OF THE STYLE RESET*/
 html {
-	height:100%
+  height: 100%;
 }
 body {
-    color:black;
-	font-family: 'Raleway', sans-serif;
-	position: relative;
-	height:100%;
-	min-height:100%;
-	display: flex;
-	flex-direction: column;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-	position: relative;
+  position: relative;
 }
 
-
 .title {
-	text-align: center;
-	font-size: 30px;
-	position: relative;
-	margin: 1rem 0;
-	padding: 1rem 0;
-	z-index: 1;
-	height: 15rem;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  z-index: 1;
+  height: 15rem;
 }
 
 .topPart h1 {
-	font-size: 40px;
-	margin-bottom: 1.5rem;
+  font-size: 40px;
+  margin-bottom: 1.5rem;
 }
 
 .topPart p {
-	font-size: 30px;
-	margin-bottom: 1.5rem;
-	padding: 0 2rem;
-	width: 100%;
-	background-size: 100%;
+  font-size: 30px;
+  margin-bottom: 1.5rem;
+  padding: 0 2rem;
+  width: 100%;
+  background-size: 100%;
 }
 
 .paragraph {
-	font-size: 18px;
-	padding-top: 25px;
-	margin: 1rem 10rem;
-	text-align: center;
+  font-size: 18px;
+  padding-top: 25px;
+  margin: 1rem 10rem;
+  text-align: center;
 }
 
 .navBar {
-	background-color: darkcyan;
-	color: white;
-	font-weight: bold;
-	display: flex;
-	position: fixed;
-	top:0;
-	z-index:12;
-	background-size: 100%;
-	width: 100%;
-	justify-content: space-around;
-	align-items: center;
-	box-shadow: 5px 10px 18px #8888888f;
-	clear: both;
-	padding-top: 0;
-	height: 3.3rem;
+  background-color: darkcyan;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 12;
+  background-size: 100%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 10px 18px #8888888f;
+  clear: both;
+  padding-top: 0;
+  height: 3.3rem;
 }
 
-#menu li a:hover{
-	color: purple;
-	text-decoration: none;
-	transition: 0.7s;
+#menu li a:hover {
+  color: purple;
+  text-decoration: none;
+  transition: 0.7s;
 }
 
 .logoGF {
-	max-width: 40px;
-	border-radius: 50%;
+  max-width: 40px;
+  border-radius: 50%;
 }
 
 nav ul {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	text-decoration: none;
-	margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  margin: 1rem;
 }
 
 nav ul li a {
-	text-decoration: none;
-	color: white;
-	margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
 }
 
-
-
 .mainPart {
-	position: static;
+  position: static;
 }
 
 main {
-	padding-bottom: 200px;
-	margin: 60px 60px;
+  padding-bottom: 200px;
+  margin: 60px 60px;
 }
 
-
 footer {
-	text-align: center;
-	position: fixed;
-	
-	bottom: 0;
-	height: 3.5rem;
-	background-color: white;
-	background-size: 100%;
-	width: 100%;
-	padding-bottom: 0;
-	border-top-left-radius: 40%;
-	border-top-right-radius: 40%;
-	vertical-align: bottom;
-	clear: both;
-	box-sizing: content-box;
+  text-align: center;
+  position: fixed;
+
+  bottom: 0;
+  height: 3.5rem;
+  background-color: white;
+  background-size: 100%;
+  width: 100%;
+  padding-bottom: 0;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  vertical-align: bottom;
+  clear: both;
+  box-sizing: content-box;
 }
 
 .footer {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-	bottom: 0px;
-	z-index: 11;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 11;
 }
 
 .sideNav {
-	width: 20px; 
-	position: fixed; 
-	 top: 50%;
-	 right: 0;
-	display: flex;
-	 flex-direction: column;
-	 align-items: flex-end;
-	margin-right: 5px;
-	z-index: 13;
+  width: 20px;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 5px;
+  z-index: 1;
 }
 
-.sideNav img{
-	width: 20px;
+.sideNav img {
+  width: 20px;
 }
-
 
 /*START OF HOME STILING*/
-.home-content{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	margin-top: 4rem;
-  }
+.home-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
 
 .home-section div a h2 {
-	text-align: center;
-	font-size: 26px;
+  text-align: center;
+  font-size: 26px;
 }
 
 .home-section {
-	width: 30%;
-	height: 12rem;
-	background-color: white;
-	margin: 1rem;
-	padding: 8rem 3rem;
-	border-radius: 10%;
-	position: relative;
-	z-index: 300;
-	
+  width: 30%;
+  height: 12rem;
+  background-color: white;
+  margin: 1rem;
+  padding: 8rem 3rem;
+  border-radius: 10%;
+  z-index: 13;
 }
 
-.home-section div a{
-	text-decoration: none;
-	font-size: 18px;
-	padding: 1rem;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	z-index: 100;
-	color: purple;
+.home-section div a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: purple;
 }
 
 .home-section div {
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.index-text{
-	text-align: center;
-
+.index-text {
+  text-align: center;
 }
 
 .button-home {
-	margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .home-section div a:hover {
-	color: darkcyan;
-	text-decoration: none;
-	transition: 0.7s;
-
+  color: darkcyan;
+  text-decoration: none;
+  transition: 0.7s;
 }
 
-  
-  
-  /*END OF HOME STILING*/
+/*END OF HOME STILING*/
 
 /* LOG IN STYLING*/
 
 .login {
-	display: flex;
-	align-items: center;
-	align-content: center;
-	flex-direction: column;
-	text-align: center;
-	margin: 8rem;
-	padding-top: 5rem;
-	background-color: rgba(228, 124, 238, 0.693);
-	background-size: cover;
-	border-radius: 10%;
-	height: 400px;
-	max-width: 600px;
-	min-width: 300px;
-	box-sizing: border-box;
-    display: block;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 8rem;
+  padding-top: 5rem;
+  background-color: rgba(228, 124, 238, 0.693);
+  background-size: cover;
+  border-radius: 10%;
+  height: 400px;
+  max-width: 600px;
+  min-width: 300px;
+  box-sizing: border-box;
+  display: block;
 }
 
 .main-login {
-	margin-bottom: 10rem;
+  margin-bottom: 10rem;
 }
 
-
 .login h2 {
-	font-size: 3rem;
-	font-weight: bolder;
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 .login-form {
-	display: flex;
-	flex-direction: column;
-	padding: 3rem;
-	justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  justify-content: space-around;
 }
 
 .login-form input {
-	margin: 0.5rem;
+  margin: 0.5rem;
 }
 
 .login-form p {
-	margin-top: 1rem; 
+  margin-top: 1rem;
 }
 
 .button {
-	background-color: darkcyan;
-	color: white;
-	margin: 2.5rem 3rem 0 3rem;
-	padding: 0.7rem;
-	font-weight: bold;
+  background-color: darkcyan;
+  color: white;
+  margin: 2.5rem 3rem 0 3rem;
+  padding: 0.7rem;
+  font-weight: bold;
 }
 
 .button:hover {
-	color: purple;
+  color: purple;
 }
 
+.message-container p {
+  background-color: darkcyan;
+  color: white;
+  margin: 1rem 2rem 0 2rem;
+  padding: 0.7rem;
+  font-weight: bold;
+  font-size: 14px;
+  max-width: 300px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 
-.message-container p{
-	background-color: darkcyan;
-	color: white;
-	margin: 1rem 2rem 0 2rem;
-	padding: 0.7rem;
-	font-weight: bold;
-	font-size: 14px;
-	max-width:300px;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	}
 .form-wrapper {
-	display:flex;
-	flex-direction: column;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
-
 
 /* END OF LOG IN STYLING*/
 
-
 /* start OF FAQ STYLING*/
 
-.faq-buttons{
-	color: darkcyan;
-	text-decoration: none;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	
-
+.faq-buttons {
+  color: darkcyan;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 0 25%;
 }
 
-.section-container{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0 2rem;
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 2rem;
 }
 
-.card{
-    margin-top:10px;
-	background-color: lightgoldenrodyellow;	
-  }
+.card {
+  margin-top: 10px;
+  background-color: lightgoldenrodyellow;
+}
 
-  .btn {
-	  text-decoration: none;
-	  color: darkcyan;
-	  font-weight: bolder;
-  }
+.btn {
+  text-decoration: none;
+  color: darkcyan;
+  font-weight: bolder;
+}
 
-  .btn:hover {
-	  font-size: 105%;
-	  background-color: darkcyan;
-	  text-decoration: none;
-	  color: lightgoldenrodyellow;
-  }
+.btn:hover {
+  font-size: 105%;
+  background-color: darkcyan;
+  text-decoration: none;
+  color: lightgoldenrodyellow;
+}
 
 /* END OF faq STYLING*/
 
-
 /* START OF RECIPES STYLING*/
-.recipePhoto{
-	border-radius: 10%;
-	width: 40%;
-	min-width: 33%;
+.recipePhoto {
+  border-radius: 10%;
+  width: 20rem;
+  padding: 1rem;
 }
 
 .recipe-full-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
-	margin: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2rem;
 }
 
-.recipe-full-list div{
-	align-items: center;
-	text-align: center;
-	margin: 5px 20%;
-	background-color: lightgoldenrodyellow;
-	padding: 20px;
-	border-radius: 10%;
-	min-width: 33%;
-	max-width: 33%;
-	height:33%;
+.recipe-full-list div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+  background-color: lightgoldenrodyellow;
+  padding: 5rem;
+  border-radius: 10%;
+  width: 50%;
 }
 
+.random-recipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
 
-.recipe-full-list p {
+.random-recipe div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+  background-color: lightgoldenrodyellow;
+  padding: 5rem;
+  width: 50%;
+  border-radius: 10%;
+}
+
+.recipe-full-list > p {
+  color: black;
+  font-size: 22px;
+  font-weight: 300;
+  font-weight: lighter;
+}
+
+.recipe-full-list p a {
+	text-decoration: none;
 	color: black;
-	font-size: 22px;
-	font-weight: 300;
-
 }
+
+.recipe-full-list p b {
+	font-weight: 300;
+}
+
 #random-and-not {
-	display:flex;
-	align-items: center;
-	text-align: center;
-	flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 .container h2 {
-	font-weight: 500;
-	font-size: 38px;
-	color: white;
-	font-weight: bold;
-
+  font-weight: bold;
+  font-size: 38px;
+  color: white;
+  margin: 2rem;
+  background-color: rgba(228, 124, 238, 0.693);
+  border-radius: 5%;
+  padding: 2rem 7rem;
 }
 
 .container {
-	display: flex;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
-	flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .recipe-title {
-	color: darkcyan;
-	font-weight: 900;
-	font-size:;
+  color: darkcyan;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
 }
-
-
 
 /* END OF RECIPES STYLING*/
 
-
-
 /* START OF BLOG STYLING*/
 .blog-entries {
-	text-align: center;
-	align-items: center;
-	display: flex;
-	flex-direction: column-reverse;
-	margin-bottom: 6rem;
-	margin-top: 4rem;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 6rem;
+  margin-top: 4rem;
 }
 
 .blog-entries article {
-	background-color: lightgoldenrodyellow;
-	border-radius: 10%;
-	padding: 2rem 12%;
-	margin: 2rem 1rem;
-	font-size: 18px;
-	max-width: 70%;
-	box-shadow: 18px 18px 18px #8888888f;
+  background-color: lightgoldenrodyellow;
+  border-radius: 10%;
+  padding: 2rem 12%;
+  margin: 2rem 1rem;
+  font-size: 18px;
+  max-width: 70%;
+  box-shadow: 18px 18px 18px #8888888f;
 }
 
 .blog-paragraph {
-	margin-top: 1rem;
-	border-top: 1rem;
-
+  margin-top: 1rem;
+  border-top: 1rem;
 }
 
 .inner-paragraph {
-	text-align: justify;
-	text-justify: inter-word;
-	margin-top: 0.7rem;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 0.7rem;
 }
 
-
 .blog-date {
-	color: grey;
-	font-style: italic;
-	font-size: 80%;
-	margin-top: 1rem;
-	text-align: left;
+  color: grey;
+  font-style: italic;
+  font-size: 80%;
+  margin-top: 1rem;
+  text-align: left;
 }
 
 .blog-entries article h3 {
-	font-size: 120%;
-	font-weight: 700;
-	margin: 2rem 0;
-	text-align: center;
-	color: darkcyan;
-	text-shadow: 2px 2px rgba(128, 0, 128, 0.357);
+  font-size: 120%;
+  font-weight: 700;
+  margin: 2rem 0;
+  text-align: center;
+  color: darkcyan;
+  text-shadow: 2px 2px rgba(128, 0, 128, 0.357);
 }
 
 /* END OF BLOG STYLING*/
 
-
-
-
-
 /* GRADIENT BACKGROUND*/
 .topPart {
-	
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
-	color: white;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-  
-	/* END OF GRADIENT BACKGROUND*/
 
-  
-  @media screen and (min-width: 768px) {
-	body {
-	  background-color: #debff3;
-	}
+/* END OF GRADIENT BACKGROUND*/
 
-	#hamnav label, #hamburger { display: none; }
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #debff3;
   }
 
+  #hamnav label,
+  #hamburger {
+    display: none;
+  }
+}
 
 /*CSS FOR BOOTSTRAP*/
 
-  .selector-for-some-widget {
-	box-sizing: content-box;
-  }
-  
+.selector-for-some-widget {
+  box-sizing: content-box;
+}

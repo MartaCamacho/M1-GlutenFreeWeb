@@ -14,7 +14,7 @@
 const getRandomRecipe = async() => {
     
     //get all the recipes from the API
-    const response = await fetch("https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&number=100&apiKey=99a9e25d870940849ebc295e3f83c4e9");
+    const response = await fetch("https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&number=20&apiKey=a112c4d2e68f43d482bbf42cf5b6994b ");
     const recipe = await response.json();
     const arrayRecipes = recipe.results;
     
@@ -24,7 +24,7 @@ const getRandomRecipe = async() => {
     const objRecipeId = objRecipe.id;
     
     //get the detailes info of the random recipe
-    const responseId = await fetch(`https://api.spoonacular.com/recipes/${objRecipeId}/information?&apiKey=99a9e25d870940849ebc295e3f83c4e9`);
+    const responseId = await fetch(`https://api.spoonacular.com/recipes/${objRecipeId}/information?&apiKey=a112c4d2e68f43d482bbf42cf5b6994b `);
     const recipeId = await responseId.json();
     
     return recipeId;
@@ -40,13 +40,13 @@ const getRandomRecipe = async() => {
 
 async function getRecipes() {
     const recipeResponse = await fetch(
-      "https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&number=2&apiKey=c0579e462a3848dc96338129e0a230f9 "
+      "https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&number=20&apiKey=a112c4d2e68f43d482bbf42cf5b6994b "
     );
     const recipeJSON = await recipeResponse.json();
     const profiles = recipeJSON.results.map(async (recipe) => {
       const id = recipe.id;
       const profileResponse = await fetch(
-        `https://api.spoonacular.com/recipes/${id}/information?&apiKey=c0579e462a3848dc96338129e0a230f9 `
+        `https://api.spoonacular.com/recipes/${id}/information?&apiKey=a112c4d2e68f43d482bbf42cf5b6994b  `
       );
       const profileJSON = await profileResponse.json();
       return profileJSON;
@@ -101,15 +101,15 @@ async function getRecipes() {
         const randomRecipes = document.createElement("div");
         if (rdmData.instructions !== null) {
             randomRecipes.innerHTML = `
-            <img src='${rdmData.image}'>
-            <span>${rdmData.title}</span>
-            <h2>${rdmData.instructions}</h2>`;
+            <img class="recipePhoto" src='${rdmData.image}'>
+            <span class="recipe-title">${rdmData.title}</span>
+            <p>${rdmData.instructions}</p>`;
                     divRandomRecipeinfo.appendChild(randomRecipes);
         } else {
             randomRecipes.innerHTML = `
-            <img src='${rdmData.image}'>
-            <span>${rdmData.title}</span>
-            <h2>${rdmData.summary}</h2>`;
+            <img class="recipePhoto" src='${rdmData.image}'>
+            <span class="recipe-title">${rdmData.title}</span>
+            <p>${rdmData.summary}</p>`;
             divRandomRecipeinfo.appendChild(randomRecipes);
             }
     }
@@ -117,7 +117,7 @@ async function getRecipes() {
         const recipes = await getRandomRecipe();
         generateRdmHTML(recipes);
     };
-    
+
     getRandomElements();
 
 //END OF CODE FOR GETTING THE RANDOM RECIPE
