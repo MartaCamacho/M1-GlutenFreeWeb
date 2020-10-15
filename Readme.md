@@ -2,12 +2,11 @@
 
 ## Description
 
-Have you ever wondered anything about coeliac desease? Did you ever feel alone on this? Do you or some one importante for you just become diagnosed? On this web you will be able to find my life experience and some glutenfree recipes to start your journey with me, you are not alone on this!
+Have you ever wondered anything about celiac desease? Did you ever feel alone on this? Did you or some one importante for you just become diagnosed? On this web you will be able to find my life experience and some glutenfree recipes to start your journey with me, you are not alone on this!
 
 ## MVP (DOM - CANVAS)
 
 - Draw the app pages
-
 - Draw the user flow
 - Using DOM
 - ES5 – ES6
@@ -43,18 +42,21 @@ https://bit.ly/34EvG5u
   - blog.html
   - faq.html
   - register.html
-  - signin.html
+  - sign up.html
+  - Log in.html
   - css/
     - style.css
+    - mobile.css
   - js/
-    - main.js
-    - Signup.js
-    - User.js
-    - Validator.js
+    - signup.js
+    - login.js
+    - user.js
+    - test.js
+    - Database.js
+    - validator.js
     - spoonacularApi.js
-  - assets/
-    - img/
-    - fonts/
+  - images/
+
 
 ## 
 
@@ -68,7 +70,7 @@ Spoonacular: https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&n
 
 ### Trello (list of tasks)
 
-Trello [Gluten project]([https://trello.com/b/ZccEeVdu/glutenfree-project)
+Trello [Gluten project]([https://trello.com/b/ZccEeVdu/glutenfree-project) https://trello.com/b/ZccEeVdu/glutenfree-project
 
 
 

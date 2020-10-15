@@ -1,14 +1,18 @@
 @media screen and (max-width: 768px) {
-	body {
+  body {
     background-color: lightblue;
-    }
-    
-  footer {
-	  border-top-left-radius: 0;
-    border-top-right-radius: 0;
-   }
+  }
 
-   main {
+  footer {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  header {
+    position: relative;
+  }
+
+  main {
     padding-bottom: 0;
     margin: 0;
     margin-bottom: 10rem;
@@ -20,7 +24,6 @@
     background-color: darkcyan;
     align-items: center;
     text-align: center;
-    
   }
 
   .title {
@@ -30,23 +33,23 @@
     width: 100%;
   }
 
-.topPart h1 {
-  font-size: 46px;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-}
+  .topPart h1 {
+    font-size: 46px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
 
-.topPart p {
-  font-size: 18px;
-  margin: 5px 0 0 0;
-  padding: 0 5px;
-}
+  .topPart p {
+    font-size: 18px;
+    margin: 5px 0 0 0;
+    padding: 0 5px;
+  }
 
-.paragraph {
-  margin: 0;
-  padding: 20px;
-}
+  .paragraph {
+    margin: 0;
+    padding: 20px;
+  }
 
   .recipe-full-list {
     display: flex;
@@ -57,8 +60,7 @@
     margin: 5px;
   }
 
-
-  .recipe-full-list div{
+  .recipe-full-list div {
     align-items: center;
     text-align: center;
     margin: 5px 20px;
@@ -68,252 +70,243 @@
     min-width: 75%;
   }
 
+  /*START OF INDEX STILING*/
 
-/*START OF HOME STILING*/
-
-
-.home-content{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin-top: 4rem;
-	width: 100%;
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    width: 100%;
   }
 
-.home-section div a h2 {
-	text-align: center;
-	font-size: 26px;
-}
+  .home-section div a h2 {
+    text-align: center;
+    font-size: 26px;
+  }
 
-.home-section {
-	display:flex;
-	justify-content: center;
-	flex-direction: column;
-	width: 90%;
-  height: 2rem;	
-  background-color: rgba(255, 255, 255, 0);
-}
+  .home-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 80%;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 0);
+  }
 
-.home-section div a{
-	text-decoration: none;
-	font-size: 17px;
-  padding: 0;
-	text-align: center;
-  color: purple;
-  margin: 2rem 0;
-}
+  .home-section div a {
+    text-decoration: none;
+    font-size: 17px;
+    padding: 0;
+    text-align: center;
+    color: purple;
+    margin: 2rem 0;
+  }
 
-.home-section div {
-	display:flex;
-	text-align: center;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	background-color: white;
-	border-radius: 10%;
-	margin: 1rem 0 0 0;
-	width: 100%;
-	padding: 1rem 0 0 0;
-}
+  .card-body div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10%;
+    margin: 1rem 0 0 0;
+    width: 100%;
+    padding: 1rem 0 0 0;
+  }
 
-.index-text{
-	text-align: center;
+  .index-text {
+    text-align: center;
+  }
 
-}
-
-.button-home {
-	padding-top: 1rem;
-}
-
-
-/*END OF HOME STILING*/
+  .button-home {
+    padding-top: 1rem;
+  }
 
 
-/*START OF LOGIN / SIGN UP STILING*/
-.login {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  flex-direction: column;
-  text-align: center;
-  margin: 4rem 0.1rem 12rem; 
-  padding-top: 1rem;
-  background-color: lightgoldenrodyellow;
-  border-radius: 10%;
-  height: 400px;
-  font-size: 75%;
-}
+  #blog-index-button {
+    color: white;
+  }
 
+  /*END OF INDEX STILING*/
 
+  /*START OF LOGIN / SIGN UP STILING*/
+  .login {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 4rem 0.1rem 12rem;
+    padding-top: 1rem;
+    background-color: lightgoldenrodyellow;
+    border-radius: 10%;
+    height: 400px;
+    font-size: 75%;
+  }
 
-.login-form input {
-  margin: 0.3rem;
-}
+  .login-form input {
+    margin: 0.3rem;
+  }
 
-.login-form p {
-  margin-top: 3rem; 
-}
+  .login-form p {
+    margin-top: 3rem;
+  }
 
-#login-message {
-  margin-top: 4rem;
-  margin-bottom: 0;
-}
+  #login-message {
+    margin-top: 4rem;
+    margin-bottom: 0;
+  }
 
-/*END OF LOGIN / SIGN UP STILING*/
+  /*END OF LOGIN / SIGN UP STILING*/
 
-  /* start OF FAQ STYLING*/
-.main-configuration {
-  margin: 0%;
-}
+  /* START OF FAQ STYLING*/
+  .main-configuration {
+    margin: 0%;
+  }
 
-.faq-buttons{
-  margin-top: 20%;
-  padding: 0;
-  color: darkcyan;
-  text-decoration: none;
-  width: 100%;
-  margin-bottom:5rem;
-  margin: 0;
-}
+  .faq-buttons {
+    margin-top: 20%;
+    padding: 0;
+    color: darkcyan;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 5rem;
+    margin: 0;
+  }
 
-.section-container{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0;
-}
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
 
-.card{
-  margin-top:10px;
-	background-color: lightgoldenrodyellow;	
+  .card {
+    margin-top: 10px;
+    background-color: lightgoldenrodyellow;
   }
 
   .btn {
-	  text-decoration: none;
-	  color: darkcyan;
-	  font-weight: bolder;
+    text-decoration: none;
+    color: darkcyan;
+    font-weight: bolder;
   }
 
   .btn:hover {
-	  font-size: 105%;
-	  background-color: darkcyan;
-	  text-decoration: none;
-	  color: lightgoldenrodyellow;
+    font-size: 105%;
+    background-color: darkcyan;
+    text-decoration: none;
+    color: lightgoldenrodyellow;
   }
 
-/* END OF faq STYLING*/
+  /* END OF FAQ STYLING*/
 
-/* START OF BLOG STYLING*/
-.blog-entries {
-	text-align: center;
-	display: flex;
-  flex-direction: column-reverse;
-  margin-bottom: 6rem;
-}
+  /* START OF BLOG STYLING*/
+  .blog-entries {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 6rem;
+  }
 
+  .blog-entries article {
+    background-color: lightgoldenrodyellow;
+    border-radius: 0;
+    padding: 2rem 1rem;
+    font-size: 18px;
+    margin: 2rem 0 0 0;
+    font-size: 18px;
+    max-width: 100%;
+    width: 100%;
+    box-shadow: 5px 5px 5px #8888888f;
+  }
+  /* END OF BLOG STYLING*/
 
-.blog-entries article {
-	background-color: lightgoldenrodyellow;
-	border-radius: 0;
-	padding: 2rem 1rem;
-  font-size: 18px;
-	margin: 2rem 0 0 0;
-	font-size: 18px;
-  max-width: 100%;
-  width: 100%;
-  box-shadow: 5px 5px 5px #8888888f;
-}
+  /* START OF RECIPES STYLING*/
+  .recipePhoto {
+    display: flex;
+    justify-content: center;
+    border-radius: 20%;
+    width: 80%;
+    padding: 0;
+    margin: 1rem 0 2rem 0;
+    align-items: center;
+    text-align: center;
+    min-width: none;
+  }
 
+  .recipe-full-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.7rem;
+  }
 
+  .recipe-full-list div {
+    align-items: center;
+    text-align: center;
+    margin: 1rem 0rem;
+    background-color: lightgoldenrodyellow;
+    padding: 1rem;
+    border-radius: none;
+    width: 100%;
+    margin: 1rem 0.5rem;
+  }
 
-/* END OF BLOG STYLING*/
+  .random-recipe div {
+    margin: 0;
+    background-color: lightgoldenrodyellow;
+    padding: 0;
+    border-radius: 10%;
+    width: 100%;
+  }
 
+  #random-and-not {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
 
-/* START OF RECIPES STYLING*/
-.recipePhoto{
-  display:flex;
-  justify-content: center;
-  border-radius: 20%;
-  width: 80%;
-  padding: 0;
-  margin: 1rem 0 2rem 0;
-  align-items: center;
-  text-align: center;
-  min-width: none;
-}
+  .container h2 {
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    padding: 2rem;
+    margin: 1rem;
+  }
 
-.recipe-full-list {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 0.7rem;
-}
+  .recipe-title {
+    color: darkcyan;
+    font-weight: 700;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+  }
 
-.recipe-full-list div{
-	align-items: center;
-	text-align: center;
-	margin: 1rem 0rem;
-	background-color: lightgoldenrodyellow;
-	padding: 1rem;
-	border-radius: none;
-  width: 100%;
-  margin: 1rem 0.5rem;
-}
+  .container section div {
+    margin: 0.5rem;
+    padding: 0.7rem;
+    font-size: 16px;
+  }
 
-.random-recipe div {
-  margin: 0;
-  background-color: lightgoldenrodyellow;
-  padding: 0;
-  border-radius: 10%;
-  width: 100%;
-}
+  /* END OF RECIPES STYLING*/
 
-#random-and-not {
-	display:flex;
-	align-items: center;
-	text-align: center;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-}
+  /* Hide Hamburger */
+  #hamnav label,
+  #hamburger {
+    display: none;
+  }
 
-.container h2 {
-	font-weight: 500;
-	font-size: 20px;
-	color: white;
-  font-weight: bold;
-  padding: 2rem;
-  margin: 1rem;
-}
-
-.recipe-title {
-  color: darkcyan;
-  font-weight: 700;
-  font-size: 1rem;
-  padding-bottom: 0.5rem;
-}
-
-
-.container section div{
-  margin: 0.5rem;
-  padding: 0.7rem;
-  font-size: 16px;
-}
-
-/* END OF RECIPES STYLING*/
-
-
-
-
-/* Hide Hamburger */
-#hamnav label, #hamburger { 
-  display: none; 
-}
-
-#hamitems { 
-  display: flex;
-}
+  #hamitems {
+    display: flex;
+  }
 
   #hamnav {
     width: 100%;
@@ -323,22 +316,21 @@
     z-index: 12;
   }
 
-  #hamnav label { 
-    display: inline-block; 
+  #hamnav label {
+    display: inline-block;
     color: white;
-    background:blueviolet;
+    background: blueviolet;
     border-radius: 20%;
     font-style: normal;
     font-size: 1.2em;
     padding: 10px;
   }
 
-
   #hamitems a {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    border-top: 2px dotted ;
+    border-top: 2px dotted;
     font-weight: 500;
     padding: 10px;
     color: white;
@@ -353,7 +345,13 @@
     transition: 0.7s;
   }
 
-  #hamitems { display: none; }
-  #hamnav input:checked ~ #hamitems { display: block; }
-  .navBar { visibility: hidden; }
+  #hamitems {
+    display: none;
+  }
+  #hamnav input:checked ~ #hamitems {
+    display: block;
+  }
+  .navBar {
+    visibility: hidden;
+  }
 }
