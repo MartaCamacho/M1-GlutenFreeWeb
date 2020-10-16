@@ -14,7 +14,7 @@
 const getRandomRecipe = async() => {
     
     //get all the recipes from the API
-    const response = await fetch("https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&number=20&apiKey=a112c4d2e68f43d482bbf42cf5b6994b ");
+    const response = await fetch("https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&number=20&apiKey=99a9e25d870940849ebc295e3f83c4e9 ");
     const recipe = await response.json();
     const arrayRecipes = recipe.results;
     
@@ -24,7 +24,7 @@ const getRandomRecipe = async() => {
     const objRecipeId = objRecipe.id;
     
     //get the detailes info of the random recipe
-    const responseId = await fetch(`https://api.spoonacular.com/recipes/${objRecipeId}/information?&apiKey=a112c4d2e68f43d482bbf42cf5b6994b `);
+    const responseId = await fetch(`https://api.spoonacular.com/recipes/${objRecipeId}/information?&apiKey=99a9e25d870940849ebc295e3f83c4e9 `);
     const recipeId = await responseId.json();
     
     return recipeId;
@@ -40,13 +40,13 @@ const getRandomRecipe = async() => {
 
 async function getRecipes() {
     const recipeResponse = await fetch(
-      "https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&number=20&apiKey=a112c4d2e68f43d482bbf42cf5b6994b "
+      "https://api.spoonacular.com/recipes/complexSearch?diet=glutenfree&number=20&apiKey=99a9e25d870940849ebc295e3f83c4e9 "
     );
     const recipeJSON = await recipeResponse.json();
     const profiles = recipeJSON.results.map(async (recipe) => {
       const id = recipe.id;
       const profileResponse = await fetch(
-        `https://api.spoonacular.com/recipes/${id}/information?&apiKey=a112c4d2e68f43d482bbf42cf5b6994b  `
+        `https://api.spoonacular.com/recipes/${id}/information?&apiKey=99a9e25d870940849ebc295e3f83c4e9 `
       );
       const profileJSON = await profileResponse.json();
       return profileJSON;

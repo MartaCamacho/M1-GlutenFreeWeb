@@ -504,12 +504,28 @@ footer {
   font-weight: lighter;
 }
 
+.random-recipe > p {
+  color: black;
+  font-size: 22px;
+  font-weight: 300;
+  font-weight: lighter;
+}
+
 .recipe-full-list p a {
 	text-decoration: none;
 	color: black;
 }
 
+.random-recipe p a {
+	text-decoration: none;
+	color: black;
+}
+
 .recipe-full-list p b {
+	font-weight: 300;
+}
+
+.random-recipe p b {
 	font-weight: 300;
 }
 
