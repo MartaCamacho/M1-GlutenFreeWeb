@@ -562,6 +562,21 @@ footer {
 /* END OF RECIPES STYLING*/
 
 /* START OF BLOG STYLING*/
+
+.blog-float-left {
+  width: 60%;
+  float: left;
+  border-radius: 20%;
+  margin: 0 1rem 1rem 0
+}
+
+.blog-float-right {
+  width: 60%;
+  float: right;
+  border-radius: 20%;
+  margin: 0 0 1rem 1rem;
+}
+
 .blog-entries {
   text-align: center;
   align-items: center;
